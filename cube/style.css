@@ -1,0 +1,33 @@
+*{box-sizing: border-box;}
+body {background: #000;}
+        .kaspayici {
+            width: 400px;
+            height: 400px;
+            margin: 200px auto;
+            perspective: 300px;
+        }
+        .kup {
+            width: 300px;
+            height: 300px;
+            transform-style: preserve-3d;
+            transform: rotate3d(1,1,1,45deg);
+            margin: 200px auto;
+        }
+        .kenar {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background: #131313;
+            opacity: 0.7;
+            font-size: 70px;
+            line-height: 200px;
+            color: aliceblue;
+            text-align: center;
+            border: 15px solid #fff;
+        }
+        .on {transform: translateZ(100px);}
+        .arka {transform: rotate(180deg) translateZ(100px);}
+        .sag {transform: rotateY(90deg) translateZ(100px);}
+        .sol {transform: rotateY(-90deg) translateZ(100px);}
+        .ust {transform: rotateX(90deg) translateZ(100px);}
+        .alt {transform: rotateX(-90deg) translateZ(100px);}
